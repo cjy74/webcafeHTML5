@@ -2,6 +2,18 @@
 html, body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+body{
+  color: #000;
+  background-color: #ccc;
+}
+
+/* 링크 스타일 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /*박스사이징 재정의*/
 body *, body *::before, body *::after{
   box-sizing: border-box;
@@ -14,9 +26,53 @@ body *, body *::before, body *::after{
 }
 /* 헤더 */
 .header{
-  background-color: yellow;
-  height: 10vh;
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
+  height: 120px;
+  border-radius: 0 0 15px 15px;
 }
+
+/* 로고 */
+.logo{
+  margin: 0;
+  font-size: 1em;
+  position: absolute;
+  top : 45px;
+  left: 60px;
+}
+
+.logo img{
+  margin: 0;
+  vertical-align: top;
+
+}
+
+.logo a{
+  display: block;
+}
+
+/* 멤버서비스 링크 */
+.member-service{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: right;
+  transform: translateX(10px);
+}
+
+.member-service li{
+  display: inline-block;
+  padding: 4px 0;
+  text-transform: uppercase;
+}
+
+.member-service a{
+  display: inline-block;
+  padding: 6px 10px;
+}
+
+
 /* 비주얼 */
 .visual{
   background-color: orange;
@@ -36,6 +92,7 @@ body *, body *::before, body *::after{
 }
 */
 
+/* float을 활용한 메인콘텐츠 배치*/
 .main{
   background-color: blue;
   display: flow-root;
@@ -84,6 +141,3 @@ body *, body *::before, body *::after{
 
 
 
-.logo{
-  margin: 0;
-}
