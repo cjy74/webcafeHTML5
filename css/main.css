@@ -23,6 +23,10 @@ body *, body *::before, body *::after{
   height: 10vh;
 }
 /* 메인콘텐츠 */
+
+/* flex를 활용한 메인콘텐츠 배치*/
+
+/*
 .main{
   background-color: blue;
   height: 60vh;
@@ -30,10 +34,31 @@ body *, body *::before, body *::after{
   flex-flow: row nowrap;
   justify-content: space-evenly;
 }
+*/
+
+.main{
+  background-color: blue;
+  display: flow-root;
+  min-height: 450px;
+  padding: 30px 15px;
+}
+
+/* .clearfix::after{
+  content: "";
+  background-color: red;
+  clear: both;
+  display: block;
+} */
+.group{
+  margin: 0 15px;
+  float: left;
+}
+
 
 .group1{
   background-color: pink;
   width: 250px;
+  float: right;
 }
 .group2{
   background-color: lime;
@@ -44,10 +69,12 @@ body *, body *::before, body *::after{
   width: 190px;
 }
 
+
 /* 슬로건 */
 .slogan{
   background-color: aqua;
   height: 10vh;
+  /* clear: both; */
 }
 /* 푸터 */
 .footer{
