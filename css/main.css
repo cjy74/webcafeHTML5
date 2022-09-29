@@ -373,6 +373,89 @@ a{
   color: #dd422a;
 }
 
+/* 유효성 검사 배너 */
+.validation{
+  margin-top: 25px;
+}
+
+.validation-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.validation-list li{
+  margin-top: 10px;
+}
+
+.validation-list a{
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 8px 20px 8px 45px;
+  background:url(./images/validation_icon.png) no-repeat 20px 50%,#ccc linear-gradient(#ccc, #eee);
+}
+
+.validation-list a:hover, .validation-list a:focus{
+  color: #f00;
+}
+
+/* 웹관련용어 */
+.term{
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.term-title{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.term-list{
+  display: flow-root;
+  margin: 10px 0 0 0;
+}
+
+.term-list dd{
+  margin-left: 0;
+}
+
+.term-list .odd{
+  }
+
+.term-list-subject{
+  color: #296897;
+  font-weight: 500;
+  float: right;
+  width: 140px;
+}
+
+.term-list-thumbnail{
+  float: left;
+}
+
+.term-list-thumbnail img{
+  float: left;
+  vertical-align: top;
+}
+
+.term-list-brief{
+  margin-top: 5px;
+  float: right;
+  width: 140px;
+}
+
+/* .reverse .term-list-subject, .reverse .term-list-brief{
+  float: left;
+}
+
+.reverse .term-list-thumbnail{
+  float: right;
+} */
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
