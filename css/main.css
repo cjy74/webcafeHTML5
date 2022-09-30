@@ -53,7 +53,7 @@ a{
   z-index: 10;
 }
 
-/* 클래스 모듈 */
+/* 클래스 모듈 */git
 .reset-list{
   margin: 0;
   padding-left: 0;
@@ -685,10 +685,56 @@ a{
   padding: 8px;
 }
 
+/* 신규이벤트 */
+.event{
+  border-bottom: 1px solid #999;
+}
+
+.event-title{
+  float: left;
+}
+
+.event-button{
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-end;
+  /* gap: 5px; */
+}
+
+/* .event-button-prev, .event-button-next */
+.event-button button{
+  width: 19px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  background: url(./images/back_forward.png);
+}
+
+.event-button-prev{
+  margin-right: 5px;
+}
+
+.event-button-next{
+  background-position: -36px 0 !important;
+}
+
+.event-thumbnail, .event-brief{
+  margin: 10px 0;
+}
+
+.event-thumbnail img{
+  box-shadow: 5px 5px 0 0 #999;
+}
+
+/* 관련사이트 */
+.related{
+
+}
 /* 슬로건 */
 .slogan{
   height: 10vh;
 }
+
 /* 푸터 */
 .footer{
   height: 10vh;
