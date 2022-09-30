@@ -53,7 +53,18 @@ a{
   z-index: 10;
 }
 
-/* 클래스 모듈 */git
+.skip-nav a{
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+}
+
+.skip-nav a:focus{
+  outline-offset: -4px;
+  position: static;
+}
+
+/* 클래스 모듈 */
 .reset-list{
   margin: 0;
   padding-left: 0;
@@ -75,8 +86,8 @@ a{
   padding: 10px;
 }
 
-.spacing-md{
-  padding: 15px;
+.gap-top-md{
+  margin-top: 20px;
 }
 
 .accent-color{
@@ -89,16 +100,6 @@ a{
   margin: 0;
 }
 
-.skip-nav a{
-  display: inline-block;
-  padding: 10px;
-  position: absolute;
-}
-
-.skip-nav a:focus{
-  outline-offset: -4px;
-  position: static;
-}
 
 /* 레이아웃 */
 .header, .visual, .main, .slogan, .footer-inner{
@@ -728,13 +729,44 @@ a{
 
 /* 관련사이트 */
 .related{
-
+  padding-top: 10px;
 }
+
+.related-list{
+  margin-top: 10px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 250ms, padding 250ms 250ms;
+}
+
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px 0;
+}
+
+.related-list li{
+  height: 25px;
+  padding: 4px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.related-list a{
+  /* display: block; */
+  flex: 0 0 100%;
+  padding: 0 15px;
+}
+
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
 }
-
 /* 푸터 */
 .footer{
   height: 10vh;
